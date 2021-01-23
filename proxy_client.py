@@ -56,6 +56,7 @@ def main():
         send_data(s, payload)
         s.shutdown(socket.SHUT_WR)
 
+        print("waiting for data....")
         #continue accepting data until no more left
         full_data = b""
         while True:
